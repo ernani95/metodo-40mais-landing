@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método 40+ | Emagrecer depois dos 40 com leveza e resultado real</title>
+  <meta name="description" content="Protocolo criado especificamente para o metabolismo feminino após os 40. Sem dietas extremas, sem academia pesada. Acesso imediato por R$27." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ══════════════════════════════════════
+       DESIGN TOKENS
+    ══════════════════════════════════════ */
+    :root {
+      --cor-primaria:       #7C2D8F;
+      --cor-secundaria:     #D4617A;
+      --cor-destaque:       #E9A84C;
+      --cor-cta:            #D4617A;
+      --cor-cta-hover:      #B84D68;
+      --cor-urgencia:       #C0392B;
+      --cor-fundo:          #FFF8F5;
+      --cor-fundo-2:        #F3E8F7;
+      --cor-texto:          #1C1C2E;
+      --cor-texto-suave:    #6B7280;
+      --cor-sucesso:        #2D7A4F;
+
+      --gradiente-hero:     linear-gradient(135deg, #7C2D8F 0%, #D4617A 100%);
+      --gradiente-cta:      linear-gradient(135deg, #D4617A 0%, #B84D68 100%);
+      --gradiente-destaque: linear-gradient(135deg, #E9A84C 0%, #D4920F 100%);
+
+      --sombra-card:        0 4px 24px rgba(124,45,143,0.12);
+      --sombra-btn:         0 8px 32px rgba(233,168,76,0.45);
+      --radius-card:        16px;
+      --radius-btn:         50px;
+      --transition:         all 0.3s ease;
+    }
+
+    /* ══════════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ══════════════════════════════════════
+       UTILITIES
+    ══════════════════════════════════════ */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .container--narrow {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Fade-in animation base */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ══════════════════════════════════════
+       BUTTON
+    ══════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: var(--radius-btn);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      text-transform: none;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-gold {
+      background: var(--gradiente-destaque);
+      color: var(--cor-texto);
+      font-size: 1.05rem;
+      padding: 18px 40px;
+      box-shadow: var(--sombra-btn);
+      animation: pulse-gold 2.4s ease-in-out infinite;
+    }
+    .btn-gold:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(233,168,76,0.6);
+    }
+
+    .btn-rose {
+      background: var(--gradiente-cta);
+      color: #fff;
+      font-size: 0.95rem;
+      padding: 15px 34px;
+      box-shadow: 0 6px 24px rgba(212,97,122,0.38);
+    }
+    .btn-rose:hover {
+      background: var(--cor-cta-hover);
+      transform: translateY(-2px);
+    }
+
+    @keyframes pulse-gold {
+      0%, 100% { box-shadow: var(--sombra-btn); }
+      50%       { box-shadow: 0 12px 40px rgba(233,168,76,0.65), 0 0 0 8px rgba(233,168,76,0.12); }
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 1 — STICKY TOP BAR
+    ══════════════════════════════════════ */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: var(--gradiente-hero);
+      padding: 10px 16px;
+      text-align: center;
+    }
+    .topbar p {
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .topbar p strong { color: #FFE98A; }
+
+    /* ══════════════════════════════════════
+       SECTION 2 — HERO
+    ══════════════════════════════════════ */
+    .hero {
+      background: var(--gradiente-hero);
+      position: relative;
+      overflow: hidden;
+      padding: 60px 0 70px;
+    }
+
+    /* Subtle SVG noise/pattern overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.18;
+      pointer-events: none;
+    }
+
+    /* ─── BRAND LOGO: MÉTODO 40+ ─── */
+    .logo {
+      display: block;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo--hero {
+      height: 96px;
+      /* Leve brilho recuperado já que não há mais bug de blend-mode com fundo transparente verdadeiro */
+      filter: drop-shadow(0 4px 12px rgba(233, 168, 76, 0.25));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .logo--hero:hover {
+      transform: scale(1.03);
+      filter: drop-shadow(0 6px 18px rgba(233, 168, 76, 0.4));
+    }
+
+    .logo--footer {
+      height: 64px;
+      opacity: 0.95;
+    }
+
+    /* Fallback alternativo *se* a imagem não preencher cor adequadamente */
+    .logo--fallback {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Hero dois colunas */
+    .hero-content {
+      position: relative;
+      /* z-index omitido propositalmente: evita isolamento de contexto para o mix-blend-mode funcionar */
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: center;
+      text-align: left;
+    }
+
+    .hero-text { /* coluna esquerda */ }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.9rem);
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-sub {
+      font-size: clamp(0.92rem, 1.8vw, 1.05rem);
+      color: rgba(255,255,255,0.9);
+      font-weight: 400;
+      margin: 0 0 28px;
+      line-height: 1.7;
+    }
+
+    .hero-badges {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 100px;
+      padding: 7px 18px;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-cta-note {
+      margin-top: 14px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.78rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ─── Hero Visual: Antes/Depois ─── */
+    .hero-visual {
+      position: relative;
+    }
+
+    .ba-frame {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 24px;
+      padding: 18px 18px 14px;
+      box-shadow: 0 24px 64px rgba(28,28,46,0.45);
+    }
+
+    .ba-title {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .ba-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .ba-slot {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .ba-slot img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      border-radius: 14px;
+      transition: transform 0.4s ease;
+    }
+
+    .ba-slot:hover img {
+      transform: scale(1.03);
+    }
+
+    .ba-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 6px 0 7px;
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 14px 14px 0 0;
+    }
+
+    .ba-label-before {
+      background: rgba(28,28,46,0.78);
+      color: rgba(255,255,255,0.7);
+    }
+
+    .ba-label-depois {
+      background: linear-gradient(135deg, rgba(124,45,143,0.88), rgba(212,97,122,0.88));
+      color: #fff;
+    }
+
+    .ba-result-badge {
+      margin-top: 12px;
+      background: var(--gradiente-destaque);
+      border-radius: 100px;
+      padding: 9px 0;
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.82rem;
+      color: var(--cor-texto);
+      letter-spacing: 0.02em;
+    }
+
+    .ba-result-badge span {
+      opacity: 0.7;
+      font-weight: 500;
+      font-size: 0.75rem;
+    }
+
+    /* ─── Bloco destaque transformação (acima depoimentos) ─── */
+    .section-transformacao {
+      background: var(--cor-fundo);
+      padding: 0 0 72px;
+    }
+
+    .trans-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 8px 48px rgba(124,45,143,0.14);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1.5px solid rgba(124,45,143,0.1);
+    }
+
+    .trans-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .trans-slot {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .trans-slot img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.45s ease;
+    }
+
+    .trans-slot:hover img {
+      transform: scale(1.04);
+    }
+
+    .trans-slot-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 8px 0 9px;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .trans-slot-label.before {
+      background: rgba(28,28,46,0.72);
+      color: rgba(255,255,255,0.65);
+    }
+
+    .trans-slot-label.depois {
+      background: linear-gradient(135deg, rgba(124,45,143,0.85), rgba(212,97,122,0.85));
+      color: #fff;
+    }
+
+    .trans-content {
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .trans-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cor-secundaria);
+      margin-bottom: 12px;
+    }
+
+    .trans-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+      color: var(--cor-primaria);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .trans-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .trans-stat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--cor-texto);
+    }
+
+    .trans-stat i {
+      color: var(--cor-sucesso);
+      font-size: 0.88rem;
+      flex-shrink: 0;
+    }
+
+    .trans-quote {
+      background: var(--cor-fundo-2);
+      border-left: 3px solid var(--cor-primaria);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 16px;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--cor-texto-suave);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .trans-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .trans-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--gradiente-hero);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .trans-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--cor-texto);
+    }
+
+    .trans-meta {
+      font-size: 0.76rem;
+      color: var(--cor-texto-suave);
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 36px;
+      }
+      .hero-text { order: 0; }
+      .hero-visual { order: 1; }
+      .hero-badges { justify-content: center; }
+      .hero-cta-note { justify-content: center; }
+      .hero .btn { width: 100%; justify-content: center; }
+
+      .trans-card {
+        grid-template-columns: 1fr;
+      }
+      .trans-content {
+        padding: 28px 24px;
+      }
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 3 — IDENTIFICAÇÃO COM A DOR
+    ══════════════════════════════════════ */
+    .section-dor {
+      background: var(--cor-fundo-2);
+      padding: 72px 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      color: var(--cor-primaria);
+      font-size: clamp(1.55rem, 3.5vw, 2.2rem);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: var(--cor-texto-suave);
+      font-size: 1rem;
+      margin-bottom: 44px;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+
+    .pain-card {
+      background: #fff;
+      border-radius: var(--radius-card);
+      border-left: 4px solid var(--cor-secundaria);
+      padding: 20px 22px;
+      box-shadow: var(--sombra-card);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.93rem;
+      color: var(--cor-texto);
+      line-height: 1.55;
+    }
+
+    .pain-card .pain-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .dor-closing {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--cor-primaria);
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 4 — MECANISMO ÚNICO
+    ══════════════════════════════════════ */
+    .section-mecanismo {
+      background: var(--cor-fundo);
+      padding: 72px 0;
+    }
+
+    .pilares-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 44px;
+    }
+
+    .pilar-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--sombra-card);
+      padding: 36px 28px;
+      text-align: center;
+      border: 1px solid rgba(124,45,143,0.08);
+    }
+
+    .pilar-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gradiente-hero);
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .pilar-icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .pilar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--cor-primaria);
+      margin-bottom: 10px;
+    }
+
+    .pilar-card p {
+      font-size: 0.88rem;
+      color: var(--cor-texto-suave);
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 5 — O QUE VOCÊ RECEBE
+    ══════════════════════════════════════ */
+    .section-valor {
+      background: var(--gradiente-hero);
+      padding: 72px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-valor::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .section-valor .section-title,
+    .section-valor h2 { color: #fff; }
+
+    .valor-list {
+      list-style: none;
+      margin: 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .valor-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      gap: 16px;
+    }
+
+    .valor-item:last-child { border-bottom: none; }
+
+    .valor-item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      font-size: 0.93rem;
+    }
+
+    .valor-item-left i {
+      color: var(--cor-destaque);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .valor-price {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.85rem;
+      text-decoration: line-through;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .valor-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cor-destaque), transparent);
+      margin: 8px 0 24px;
+    }
+
+    .valor-total {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .valor-total .total-label {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .valor-total .total-was {
+      color: rgba(255,255,255,0.55);
+      font-size: 1.1rem;
+      text-decoration: line-through;
+      margin-bottom: 6px;
+    }
+
+    .valor-total .today-label {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .valor-total .price-big {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 800;
+      color: var(--cor-destaque);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .valor-total .price-big sup {
+      font-size: 0.38em;
+      vertical-align: super;
+      font-weight: 600;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 6 — TIMER URGÊNCIA
+    ══════════════════════════════════════ */
+    .section-timer {
+      background: #1C1C2E;
+      padding: 64px 0;
+      text-align: center;
+    }
+
+    .timer-warning {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(192,57,43,0.2);
+      border: 1px solid rgba(192,57,43,0.5);
+      border-radius: 100px;
+      padding: 8px 20px;
+      color: #FF6B6B;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .timer-title {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+      margin-bottom: 8px;
+    }
+
+    .timer-sub {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.92rem;
+      max-width: 520px;
+      margin: 0 auto 32px;
+      line-height: 1.65;
+    }
+
+    .timer-sub strong { color: #FFE98A; }
+
+    .timer-explain {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 20px 28px;
+      margin: 0 auto 32px;
+      max-width: 620px;
+      color: rgba(255,255,255,0.72);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .countdown-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .cd-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cd-num {
+      background: var(--cor-urgencia);
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      font-size: clamp(2.2rem, 7vw, 3.8rem);
+      font-weight: 700;
+      width: clamp(74px, 18vw, 100px);
+      height: clamp(74px, 18vw, 100px);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(192,57,43,0.35);
+      letter-spacing: 0.05em;
+    }
+
+    .cd-unit {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    .cd-sep {
+      color: rgba(255,255,255,0.4);
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 7 — DEPOIMENTOS
+    ══════════════════════════════════════ */
+    .section-dep {
+      background: var(--cor-fundo-2);
+      padding: 72px 0;
+    }
+
+    .dep-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 44px;
+    }
+
+    .dep-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 26px;
+      box-shadow: var(--sombra-card);
+      position: relative;
+      border: 1px solid rgba(124,45,143,0.07);
+    }
+
+    .dep-stars {
+      color: var(--cor-destaque);
+      font-size: 1rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    .dep-badge {
+      display: inline-block;
+      background: var(--cor-secundaria);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 100px;
+      padding: 4px 12px;
+      margin-bottom: 16px;
+    }
+
+    .dep-quote-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--cor-primaria);
+      opacity: 0.12;
+      line-height: 0.5;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .dep-text {
+      font-size: 0.9rem;
+      color: var(--cor-texto);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .dep-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .dep-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gradiente-hero);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .dep-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--cor-texto);
+    }
+
+    .dep-meta {
+      font-size: 0.78rem;
+      color: var(--cor-texto-suave);
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 8 — POR QUE ESTE MÉTODO
+    ══════════════════════════════════════ */
+    .section-porque {
+      background: var(--cor-fundo);
+      padding: 72px 0;
+    }
+
+    .porque-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 44px;
+    }
+
+    .porque-card {
+      background: #fff;
+      border-radius: var(--radius-card);
+      padding: 30px 26px;
+      box-shadow: var(--sombra-card);
+      border: 1px solid rgba(124,45,143,0.07);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+
+    .porque-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 36px rgba(124,45,143,0.18);
+    }
+
+    .porque-icon {
+      font-size: 2.2rem;
+      flex-shrink: 0;
+    }
+
+    .porque-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--cor-primaria);
+      margin-bottom: 8px;
+    }
+
+    .porque-card p {
+      font-size: 0.88rem;
+      color: var(--cor-texto-suave);
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 9 — GARANTIA
+    ══════════════════════════════════════ */
+    .section-garantia {
+      background: var(--cor-fundo-2);
+      padding: 72px 0;
+    }
+
+    .garantia-inner {
+      display: flex;
+      align-items: center;
+      gap: 52px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .garantia-icon {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 28px rgba(45,122,79,0.2);
+      border: 3px solid rgba(45,122,79,0.25);
+    }
+
+    .garantia-icon i {
+      font-size: 3rem;
+      color: var(--cor-sucesso);
+    }
+
+    .garantia-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cor-sucesso);
+      margin-bottom: 10px;
+    }
+
+    .garantia-content h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      color: var(--cor-primaria);
+      margin-bottom: 14px;
+    }
+
+    .garantia-content p {
+      color: var(--cor-texto);
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .garantia-trust {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-size: 0.82rem;
+      color: var(--cor-texto-suave);
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      width: fit-content;
+    }
+
+    .garantia-trust i {
+      color: var(--cor-sucesso);
+      font-size: 1rem;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 10 — FAQ
+    ══════════════════════════════════════ */
+    .section-faq {
+      background: var(--cor-fundo);
+      padding: 72px 0;
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 44px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(124,45,143,0.1);
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid rgba(124,45,143,0.1);
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.97rem;
+      color: var(--cor-texto);
+      gap: 20px;
+      user-select: none;
+      transition: color 0.25s ease;
+    }
+
+    .faq-q:hover { color: var(--cor-primaria); }
+
+    .faq-q-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--cor-fundo-2);
+      border: 1.5px solid rgba(124,45,143,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--cor-primaria);
+      font-size: 0.75rem;
+      transition: var(--transition);
+    }
+
+    .faq-item.open .faq-q-icon {
+      transform: rotate(180deg);
+      background: var(--cor-primaria);
+      color: #fff;
+      border-color: var(--cor-primaria);
+    }
+
+    .faq-item.open .faq-q { color: var(--cor-primaria); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.38s ease, padding 0.3s ease;
+      font-size: 0.93rem;
+      color: var(--cor-texto-suave);
+      line-height: 1.75;
+      padding: 0 4px;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 400px;
+      padding: 0 4px 20px;
+    }
+
+    /* ══════════════════════════════════════
+       SECTION 11 — CTA FINAL
+    ══════════════════════════════════════ */
+    .section-cta-final {
+      background: var(--gradiente-hero);
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-cta-final::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .section-cta-final h2 {
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      color: #fff;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .section-cta-final > .container--narrow > p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+      position: relative;
+    }
+
+    .cta-checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 28px auto;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .cta-checklist li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.92rem;
+    }
+
+    .cta-checklist li i {
+      color: var(--cor-destaque);
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .social-proof-final {
+      margin-top: 28px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+      position: relative;
+    }
+
+    .social-proof-final strong { color: #FFE98A; }
+
+    /* ══════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════ */
+    footer {
+      background: #1C1C2E;
+      padding: 32px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.78rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--cor-secundaria); }
+
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.75rem;
+      margin-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 16px;
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════════════
+       STICKY MOBILE CTA
+    ══════════════════════════════════════ */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: var(--gradiente-cta);
+      padding: 14px 20px;
+      box-shadow: 0 -6px 28px rgba(212,97,122,0.45);
+    }
+
+    .mobile-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE — MOBILE FIRST
+    ══════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .logo--hero {
+        height: 64px;
+        margin: 0 auto;
+        display: block;
+      }
+      .logo--footer {
+        height: 52px;
+        margin: 0 auto;
+        display: block;
+      }
+      .pain-grid       { grid-template-columns: 1fr; }
+      .pilares-grid    { grid-template-columns: 1fr; }
+      .dep-grid        { grid-template-columns: 1fr; }
+      .porque-grid     { grid-template-columns: 1fr; }
+
+      .garantia-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .garantia-trust { margin: 0 auto; }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .mobile-cta { display: block; }
+      body { padding-bottom: 64px; }
+
+      .countdown-wrap { gap: 6px; }
+      .cd-sep { margin-bottom: 22px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.7rem; }
+      .btn-gold { font-size: 0.93rem; padding: 16px 28px; }
+      .price-big { font-size: 4rem; }
+    }
+
+    /* ══════════════════════════════════════
+       ANCHOR OFFSET (sticky topbar)
+    ══════════════════════════════════════ */
+    #checkout {
+      scroll-margin-top: 44px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 1 — BARRA TOPO STICKY
+════════════════════════════════════ -->
+<div class="topbar" role="banner">
+  <p>💐 Oferta Especial Dia das Mães: <strong>de R$197,90 por apenas R$47,90</strong> — Vagas limitadas · Somente até 11/05</p>
+</div>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 2 — HERO
+════════════════════════════════════ -->
+<section class="hero" aria-label="Apresentação do Método 40+">
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- COLUNA ESQUERDA — Texto -->
+      <div class="hero-text">
+        <header class="site-header" style="margin-bottom: 36px;">
+          <a href="#" class="logo-link" aria-label="Método 40+ - Início">
+            <img
+              src="https://i.imgur.com/Wc8wtF6.png"
+              alt="Método 40+ - O primeiro método para mulheres 40+"
+              class="logo logo--hero"
+              width="auto"
+              height="64"
+              loading="eager"
+              crossorigin="anonymous"
+              onerror="this.style.display='none'; document.querySelector('.logo-fallback-text').style.display='flex';"
+            />
+          </a>
+          <div class="logo-fallback-text" style="display:none; align-items:center; font-family:'Playfair Display',serif; color:white;">
+            <span style="font-weight:400; font-size:22px;">método</span>
+            <span style="font-weight:700; font-size:36px; color:#E9A84C; margin-left:6px;">40<sup style="color:#E9A84C;">+</sup></span>
+          </div>
+        </header>
+
+        <h1 class="reveal">
+          Você Não Está Falhando.<br />
+          O Método Que Você Usa É Que Está<br />
+          Errado Para o Seu Corpo.
+        </h1>
+
+        <p class="hero-sub reveal reveal-delay-1">
+          Depois dos 40, o estrogênio cai, o cortisol sobe e tudo que funcionava
+          antes para de funcionar — não é falta de disciplina, é biologia.
+          O Método 40+ foi criado especificamente para esse corpo, nessa fase.
+        </p>
+
+        <div class="hero-badges reveal reveal-delay-2">
+          <span class="hero-badge">⭐ 4.9/5 estrelas</span>
+          <span class="hero-badge">👩 +847 mulheres</span>
+          <span class="hero-badge">✅ 30 dias de garantia</span>
+        </div>
+
+        <a href="#checkout" class="btn btn-gold reveal reveal-delay-3" id="hero-cta">
+          🔥 Quero Emagrecer Do Jeito Certo Para Meu Corpo →
+        </a>
+
+        <p class="hero-cta-note reveal reveal-delay-4">
+          <i class="fas fa-bolt"></i>
+          Acesso imediato &nbsp;·&nbsp; R$47,90 apenas &nbsp;·&nbsp; Garantia de 30 dias
+        </p>
+      </div>
+
+      <!-- COLUNA DIREITA — Fotos Antes/Depois (prova visual imediata) -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="ba-frame">
+          <p class="ba-title">✨ Resultado real — Método 40+</p>
+          <div class="ba-images">
+            <div class="ba-slot">
+              <img
+                src="https://i.imgur.com/HwAU3gr.png"
+                alt="Antes do Método 40+"
+                loading="eager"
+              />
+              <div class="ba-label ba-label-before">Antes</div>
+            </div>
+            <div class="ba-slot">
+              <img
+                src="https://i.imgur.com/KyB2PoC.jpeg"
+                alt="Depois do Método 40+ — resultado em 5 semanas"
+                loading="eager"
+              />
+              <div class="ba-label ba-label-depois">Depois ✓</div>
+            </div>
+          </div>
+          <div class="ba-result-badge">
+            🔥 −6,5kg em 5 semanas &nbsp;<span>· sem passar fome</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 3 — IDENTIFICAÇÃO COM A DOR
+════════════════════════════════════ -->
+<section class="section-dor" aria-label="Identificação com a dor">
+  <div class="container">
+    <h2 class="section-title reveal">Você se identifica com alguma dessas situações?</h2>
+    <p class="section-sub reveal reveal-delay-1">Se marcou pelo menos 2, continue lendo — isso muda tudo.</p>
+
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <span class="pain-icon">❌</span>
+        <span>Já fez low carb, jejum intermitente, contagem de calorias... e perdeu no máximo 3kg antes de tudo voltar</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-1">
+        <span class="pain-icon">❌</span>
+        <span>Acorda cansada mesmo dormindo 8 horas — energia no zero o tempo todo</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-2">
+        <span class="pain-icon">❌</span>
+        <span>O que funcionava antes simplesmente não funciona mais — e você não sabe por quê</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-3">
+        <span class="pain-icon">❌</span>
+        <span>Sente que seu corpo traiu você depois dos 40 — como se ele tivesse virado seu inimigo</span>
+      </div>
+      <div class="pain-card reveal">
+        <span class="pain-icon">❌</span>
+        <span>Tem disciplina, mas não tem resultado — e isso é a pior sensação possível</span>
+      </div>
+      <div class="pain-card reveal reveal-delay-1">
+        <span class="pain-icon">❌</span>
+        <span>Já desistiu de vez de tentar emagrecer — porque parece impossível nessa fase</span>
+      </div>
+    </div>
+
+    <p class="dor-closing reveal">
+      "Se você marcou pelo menos 2 dessas situações, o problema não é você.<br />
+      É que ninguém te explicou o que realmente muda no corpo depois dos 40."
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 4 — MECANISMO ÚNICO
+════════════════════════════════════ -->
+<section class="section-mecanismo" aria-label="Protocolo Metabólico 40+">
+  <div class="container">
+    <h2 class="section-title reveal">Apresentando: O Protocolo Metabólico 40+</h2>
+    <p class="section-sub reveal reveal-delay-1">
+      Não é mais uma dieta. É um sistema de 3 pilares que respeita<br />
+      a realidade hormonal do seu corpo nessa fase.
+    </p>
+
+    <div class="pilares-grid">
+      <div class="pilar-card reveal">
+        <span class="pilar-num">1</span>
+        <span class="pilar-icon">🍽️</span>
+        <h3>Alimentação Adaptada ao Metabolismo Lento</h3>
+        <p>Sem cortar grupos alimentares. Estratégias que trabalham com o seu metabolismo, não contra ele.</p>
+      </div>
+      <div class="pilar-card reveal reveal-delay-1">
+        <span class="pilar-num">2</span>
+        <span class="pilar-icon">🧠</span>
+        <h3>Protocolo Anti-Cortisol</h3>
+        <p>O cortisol elevado é o principal culpado pela gordura abdominal após os 40. Aqui você aprende a controlá-lo no dia a dia.</p>
+      </div>
+      <div class="pilar-card reveal reveal-delay-2">
+        <span class="pilar-num">3</span>
+        <span class="pilar-icon">📊</span>
+        <h3>Sistema de Consistência Real</h3>
+        <p>Sem depender de força de vontade. Um sistema que funciona mesmo nos dias difíceis, na vida real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 5 — O QUE VOCÊ RECEBE
+════════════════════════════════════ -->
+<section class="section-valor" id="checkout" aria-label="O que você recebe">
+  <div class="container--narrow" style="position:relative;z-index:1;">
+    <h2 class="section-title reveal" style="color:#fff; text-align:center;">Tudo que Está Incluído Hoje</h2>
+
+    <ul class="valor-list">
+      <li class="valor-item reveal">
+        <span class="valor-item-left">
+          <i class="fas fa-check-circle"></i>
+          Guia Método 40+ Completo
+        </span>
+        <span class="valor-price">De R$97</span>
+      </li>
+      <li class="valor-item reveal reveal-delay-1">
+        <span class="valor-item-left">
+          <i class="fas fa-check-circle"></i>
+          Protocolo de Alimentação Adaptada
+        </span>
+        <span class="valor-price">De R$67</span>
+      </li>
+      <li class="valor-item reveal reveal-delay-2">
+        <span class="valor-item-left">
+          <i class="fas fa-check-circle"></i>
+          Rotina 21 Dias Sem Academia
+        </span>
+        <span class="valor-price">De R$47</span>
+      </li>
+      <li class="valor-item reveal reveal-delay-3">
+        <span class="valor-item-left">
+          <i class="fas fa-check-circle"></i>
+          Guia: Fome Emocional e Energia
+        </span>
+        <span class="valor-price">De R$37</span>
+      </li>
+      <li class="valor-item reveal reveal-delay-4">
+        <span class="valor-item-left">
+          <i class="fas fa-check-circle"></i>
+          Planilha de Acompanhamento
+        </span>
+        <span class="valor-price">De R$27</span>
+      </li>
+    </ul>
+
+    <div class="valor-divider"></div>
+
+    <div class="valor-total reveal">
+      <p class="total-label">Valor total dos materiais:</p>
+      <p class="total-was">R$275</p>
+      <p class="today-label" style="margin-bottom:2px;">Preço normal: <span style="text-decoration:line-through;color:rgba(255,255,255,0.5);">R$197,90</span></p>
+      <p class="today-label">💐 Oferta Dia das Mães — hoje por apenas:</p>
+      <p class="price-big"><sup>R$</sup>47<span style="font-size:0.45em;vertical-align:super;font-weight:600;">,90</span></p>
+
+      <a href="#checkout" class="btn btn-gold">
+        🔥 Quero Emagrecer Do Jeito Certo Para Meu Corpo →
+      </a>
+      <p style="margin-top:12px;color:rgba(255,255,255,0.65);font-size:0.78rem;">
+        <i class="fas fa-bolt"></i> Acesso imediato após o pagamento
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 6 — TIMER DE URGÊNCIA
+════════════════════════════════════ -->
+<section class="section-timer" aria-label="Oferta por tempo limitado">
+  <div class="container--narrow">
+    <div class="timer-warning">
+      <i class="fas fa-heart"></i>
+      Oferta especial · Dia das Mães
+    </div>
+
+    <h2 class="timer-title reveal">💐 Por que R$47,90?</h2>
+
+    <div class="timer-explain reveal reveal-delay-1">
+      <p>
+        Em celebração ao <strong style="color:#FFE98A;">Dia das Mães</strong>, criamos uma condição especial para que mais mulheres possam começar sua transformação agora. O valor normal é <strong style="color:#FF6B6B;">R$197,90</strong> — mas até o dia <strong style="color:#FFE98A;">11 de maio</strong>, você garante acesso completo por apenas <strong style="color:#FFE98A;">R$47,90</strong>. Quando as vagas esgotarem ou a data passar, o preço volta sem aviso.
+      </p>
+    </div>
+
+    <p class="timer-sub reveal reveal-delay-2">Esta oferta expira em:</p>
+
+    <div class="countdown-wrap reveal">
+      <div class="cd-block">
+        <div class="cd-num" id="cd-horas">23</div>
+        <span class="cd-unit">Horas</span>
+      </div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block">
+        <div class="cd-num" id="cd-min">47</div>
+        <span class="cd-unit">Min</span>
+      </div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block">
+        <div class="cd-num" id="cd-seg">00</div>
+        <span class="cd-unit">Seg</span>
+      </div>
+    </div>
+
+    <a href="#checkout" class="btn btn-gold reveal">
+      💐 Garantir Meu Acesso por R$47,90 →
+    </a>
+  </div>
+</section>
+
+
+
+<!-- ════════════════════════════════════
+     SEÇÃO 7 — DEPOIMENTOS
+════════════════════════════════════ -->
+<section class="section-dep" aria-label="Depoimentos">
+  <div class="container">
+    <h2 class="section-title reveal">Mulheres que Encontraram seu Caminho</h2>
+    <p class="section-sub reveal reveal-delay-1">Resultados reais de mulheres reais — assim como você.</p>
+
+    <!-- Card destaque Carla M. — com fotos antes/depois reais -->
+    <div class="trans-card reveal" style="margin-bottom: 28px;">
+      <div class="trans-images">
+        <div class="trans-slot">
+          <img
+            src="https://i.imgur.com/HwAU3gr.png"
+            alt="Foto antes de usar o Método 40+"
+            loading="lazy"
+          />
+          <div class="trans-slot-label before">Antes</div>
+        </div>
+        <div class="trans-slot">
+          <img
+            src="https://i.imgur.com/KyB2PoC.jpeg"
+            alt="Foto depois de usar o Método 40+ — 5 semanas"
+            loading="lazy"
+          />
+          <div class="trans-slot-label depois">Depois ✓</div>
+        </div>
+      </div>
+      <div class="trans-content">
+        <div class="dep-stars" style="font-size:1rem;letter-spacing:2px;margin-bottom:8px;">★★★★★</div>
+        <p class="trans-eyebrow">📸 Resultado verificado</p>
+        <h3>"Perdi 6,5kg em 5 semanas sem cortar carboidrato"</h3>
+        <div class="trans-stats">
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span><strong>6,5kg</strong> eliminados em 5 semanas</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Sem dieta restritiva, sem academia pesada</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Energia de volta já na primeira semana</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Resultado mantido após 3 meses</span></div>
+        </div>
+        <div class="trans-quote">
+          "Eu tinha desistido de tentar emagrecer. Com esse método,
+          finalmente senti que algo fazia sentido pro meu corpo.
+          A diferença não foi só no peso — foi na energia, no humor, em tudo."
+        </div>
+        <div class="trans-author">
+          <div class="trans-avatar">CM</div>
+          <div>
+            <p class="trans-name">Carla M.</p>
+            <p class="trans-meta">45 anos · Curitiba, PR · Cliente verificada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dep-grid">
+
+      <div class="dep-card reveal reveal-delay-1">
+        <div class="dep-stars">★★★★★</div>
+        <div class="dep-badge">Mais leve em 4 semanas</div>
+        <span class="dep-quote-mark">"</span>
+        <p class="dep-text">
+          Não tenho tempo para dietas complicadas. O que mais me surpreendeu
+          foi a simplicidade. Em 4 semanas já me senti mais leve, menos
+          inchada e com energia para trabalhar e cuidar dos filhos.
+        </p>
+        <div class="dep-author">
+          <div class="dep-avatar">JF</div>
+          <div>
+            <p class="dep-name">Juliana F.</p>
+            <p class="dep-meta">52 anos · São Paulo, SP</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- fim dep-grid -->
+
+    <!-- Card destaque Renata S. — com fotos antes/depois reais -->
+    <div class="trans-card reveal" style="margin-top: 28px;">
+      <div class="trans-images">
+        <div class="trans-slot">
+          <img
+            src="https://i.imgur.com/RkAYss6.png"
+            alt="Foto antes de usar o Método 40+ — Renata S."
+            loading="lazy"
+          />
+          <div class="trans-slot-label before">Antes</div>
+        </div>
+        <div class="trans-slot">
+          <img
+            src="https://i.imgur.com/US8xtTc.png"
+            alt="Foto depois de usar o Método 40+ — Renata S., 7 semanas"
+            loading="lazy"
+          />
+          <div class="trans-slot-label depois">Depois ✓</div>
+        </div>
+      </div>
+      <div class="trans-content">
+        <div class="dep-stars" style="font-size:1rem;letter-spacing:2px;margin-bottom:8px;">★★★★★</div>
+        <p class="trans-eyebrow">📸 Resultado verificado</p>
+        <h3>"Perdi 8kg em 7 semanas e não passei fome nenhum dia"</h3>
+        <div class="trans-stats">
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span><strong>8kg</strong> eliminados em 7 semanas</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Sem passar fome ou cortar grupos alimentares</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Entendeu que não era falta de disciplina</span></div>
+          <div class="trans-stat"><i class="fas fa-check-circle"></i><span>Estratégia certa para a fase certa</span></div>
+        </div>
+        <div class="trans-quote">
+          "Achava que era só falta de disciplina minha. Hoje vejo que eu
+          só estava seguindo estratégias erradas para a minha fase.
+          Perdi 8kg em 7 semanas e não passei fome nenhum dia."
+        </div>
+        <div class="trans-author">
+          <div class="trans-avatar">RS</div>
+          <div>
+            <p class="trans-name">Renata S.</p>
+            <p class="trans-meta">48 anos · Belo Horizonte, MG · Cliente verificada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 8 — POR QUE ESTE MÉTODO
+════════════════════════════════════ -->
+<section class="section-porque" aria-label="Por que este método">
+  <div class="container">
+    <h2 class="section-title reveal">Depois dos 40, o Corpo Muda.</h2>
+    <p class="section-sub reveal reveal-delay-1">A Estratégia Precisa Mudar Também.</p>
+
+    <div class="porque-grid">
+      <div class="porque-card reveal">
+        <span class="porque-icon">🧬</span>
+        <div>
+          <h3>Pensado para o Corpo 40+</h3>
+          <p>Respeita as mudanças hormonais e metabólicas dessa fase específica da vida feminina.</p>
+        </div>
+      </div>
+      <div class="porque-card reveal reveal-delay-1">
+        <span class="porque-icon">🍽️</span>
+        <div>
+          <h3>Sem Restrições Extremas</h3>
+          <p>Você não precisa cortar tudo que gosta. Aprende a comer estrategicamente, com prazer.</p>
+        </div>
+      </div>
+      <div class="porque-card reveal reveal-delay-2">
+        <span class="porque-icon">💪</span>
+        <div>
+          <h3>Sem Treinos Pesados</h3>
+          <p>Adapta-se à sua rotina real, sem exigir horas de academia ou equipamentos caros.</p>
+        </div>
+      </div>
+      <div class="porque-card reveal reveal-delay-3">
+        <span class="porque-icon">📈</span>
+        <div>
+          <h3>Resultados Sustentáveis</h3>
+          <p>Foco em consistência e mudança real — não em sacrifício passageiro que não dura.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 9 — GARANTIA
+════════════════════════════════════ -->
+<section class="section-garantia" aria-label="Garantia de 30 dias">
+  <div class="container">
+    <div class="garantia-inner">
+      <div class="garantia-icon reveal">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <div class="garantia-content reveal reveal-delay-1">
+        <p class="garantia-label"><i class="fas fa-check-circle"></i> &nbsp;Risco Zero</p>
+        <h2>Garantia Incondicional de 30 Dias</h2>
+        <p>
+          Aplique o método por 30 dias completos. Se não tiver resultado
+          ou não gostar por qualquer motivo — basta solicitar o reembolso
+          e devolveremos <strong>100% do seu investimento.</strong>
+          <br /><br />
+          Sem perguntas. Sem burocracia. Sem julgamento.
+          <br /><br />
+          O risco é 100% meu. O resultado é 100% seu.
+        </p>
+        <div class="garantia-trust">
+          <i class="fas fa-lock"></i>
+          Pagamento 100% Seguro via Hotmart / Kiwify
+          &nbsp;
+          <i class="fas fa-credit-card"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 10 — FAQ
+════════════════════════════════════ -->
+<section class="section-faq" aria-label="Perguntas frequentes">
+  <div class="container">
+    <h2 class="section-title reveal">Dúvidas Frequentes</h2>
+    <p class="section-sub reveal reveal-delay-1">Respostas diretas para as perguntas mais comuns.</p>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Isso não é mais uma dieta da internet?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          Não é dieta. É um protocolo baseado nas mudanças hormonais após os 40. Nada de restrição extrema, nada de cortar grupos alimentares. O foco é ensinar seu corpo a funcionar melhor nessa fase, de forma sustentável e sem sofrimento.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Já tentei tanta coisa e nada funcionou. Por que esse seria diferente?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          Exatamente por isso esse método existe. O que você tentou antes foi criado para corpos de 20 e poucos anos. Esse foi criado especificamente para o seu corpo, na sua fase, respeitando as mudanças hormonais reais que aconteceram.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Tenho problema de tireoide ou estou na menopausa. Funciona?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          O método foi pensado para as mudanças hormonais dessa fase, incluindo variações de tireoide e menopausa. Recomendamos manter acompanhamento médico em paralelo, especialmente se tiver condições pré-existentes.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>Preciso fazer academia todos os dias?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          Não. O protocolo inclui orientações de movimento adaptadas à sua rotina real — sem exigir horas de academia, equipamentos caros ou treinos exaustivos que você não consegue manter.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>É um aplicativo? Precisa de internet para usar?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          É um material digital para download. Você acessa uma vez, salva no celular ou computador e consulta quando quiser, sem precisar de internet. Funciona em qualquer dispositivo.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span>E se eu não gostar ou não funcionar para mim?</span>
+          <span class="faq-q-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-a" role="region">
+          30 dias de garantia total, sem perguntas. Pediu, devolvemos 100%. Simples assim. Você não tem nada a perder — só a ganhar.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SEÇÃO 11 — CTA FINAL
+════════════════════════════════════ -->
+<section class="section-cta-final" aria-label="Chamada para ação final">
+  <div class="container--narrow" style="position:relative;z-index:1;text-align:center;">
+    <h2 class="reveal">Sua Próxima Fase Começa Agora</h2>
+    <p class="reveal reveal-delay-1">
+      Você passou anos tentando com estratégias erradas para o seu corpo.
+      Chegou a hora de fazer diferente.
+    </p>
+
+    <a href="#checkout" class="btn btn-gold reveal reveal-delay-2" style="font-size:1.05rem; padding:20px 44px;">
+      ✨ Sim, Quero Começar Minha Transformação Agora →
+    </a>
+
+    <ul class="cta-checklist reveal reveal-delay-3">
+      <li><i class="fas fa-check-circle"></i> Acesso imediato após o pagamento</li>
+      <li><i class="fas fa-check-circle"></i> Funciona no celular, tablet e computador</li>
+      <li><i class="fas fa-check-circle"></i> 30 dias de garantia incondicional</li>
+      <li><i class="fas fa-check-circle"></i> Pagamento 100% seguro</li>
+      <li><i class="fas fa-check-circle"></i> Sem mensalidades — pague uma vez</li>
+    </ul>
+
+    <p class="social-proof-final reveal reveal-delay-4">
+      ⭐⭐⭐⭐⭐ &nbsp; Mais de <strong>847 mulheres</strong> já transformaram seu corpo com o Método 40+
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <a href="#" aria-label="Método 40+">
+          <img
+            src="https://i.imgur.com/Wc8wtF6.png"
+            alt="Método 40+"
+            class="logo logo--footer"
+            width="auto"
+            height="48"
+            loading="lazy"
+            crossorigin="anonymous"
+          />
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">
+      © 2026 Método 40+. Todos os direitos reservados.<br />
+      Este produto é um material educacional digital. Resultados podem variar de pessoa para pessoa.<br />
+      Este site não é afiliado ao Facebook™, Instagram™ ou TikTok™.
+    </p>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════
+     STICKY MOBILE CTA
+════════════════════════════════════ -->
+<div class="mobile-cta" id="mobile-cta-bar" role="complementary" aria-label="Comprar agora">
+  <a href="#checkout" id="mobile-cta-btn">
+    🔥 Quero Começar por R$47,90 →
+  </a>
+</div>
+
+<!-- ════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════ -->
+<script>
+  'use strict';
+
+  /* ── 1. COUNTDOWN TIMER ──────────────────────────────────── */
+  (function () {
+    const STORAGE_KEY  = 'metodo40_timer_end_v2';
+    const DURATION_MS  = (23 * 3600 + 47 * 60) * 1000; // 23h 47min
+    const RESET_MS     = 24 * 3600 * 1000;              // 24h reset
+
+    function getEndTime () {
+      let end = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+      if (!end || isNaN(end) || end <= Date.now()) {
+        end = Date.now() + DURATION_MS;
+        localStorage.setItem(STORAGE_KEY, end);
+      }
+      return end;
+    }
+
+    let endTime = getEndTime();
+
+    const elH  = document.getElementById('cd-horas');
+    const elM  = document.getElementById('cd-min');
+    const elS  = document.getElementById('cd-seg');
+
+    function pad (n) { return String(n).padStart(2, '0'); }
+
+    function tick () {
+      const remaining = endTime - Date.now();
+
+      if (remaining <= 0) {
+        // Reset — reinicia em 24h para criar urgência contínua
+        endTime = Date.now() + RESET_MS;
+        localStorage.setItem(STORAGE_KEY, endTime);
+      }
+
+      const total = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+      const h = Math.floor(total / 3600);
+      const m = Math.floor((total % 3600) / 60);
+      const s = total % 60;
+
+      if (elH) elH.textContent = pad(h);
+      if (elM) elM.textContent = pad(m);
+      if (elS) elS.textContent = pad(s);
+
+      setTimeout(tick, 1000);
+    }
+
+    tick();
+  })();
+
+  /* ── 2. FAQ ACCORDION ────────────────────────────────────── */
+  (function () {
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+      const btn = item.querySelector('.faq-q');
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        // Close all
+        items.forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      // Keyboard accessibility
+      btn.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
+        }
+      });
+    });
+  })();
+
+  /* ── 3. SCROLL REVEAL (IntersectionObserver) ─────────────── */
+  (function () {
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: show everything
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Hero elements always visible
+    document.querySelectorAll('.hero .reveal').forEach(el => {
+      el.classList.add('visible');
+    });
+  })();
+
+  /* ── 4. STICKY MOBILE CTA — hide when hero btn visible ───── */
+  (function () {
+    const heroCta   = document.getElementById('hero-cta');
+    const mobileCta = document.getElementById('mobile-cta-bar');
+    if (!heroCta || !mobileCta) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        mobileCta.style.display = entry.isIntersecting ? 'none' : 'block';
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(heroCta);
+  })();
+
+  /* ── 5. SMOOTH SCROLL FOR ANCHOR LINKS ──────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
